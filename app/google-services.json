@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "363024538010",
+    "firebase_url": "https://typeleaderboard.firebaseio.com",
+    "project_id": "typeleaderboard",
+    "storage_bucket": "typeleaderboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363024538010:android:4e5109df202c358b",
+        "android_client_info": {
+          "package_name": "id.balistream.leaderboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363024538010-stcoautevnbnvdpnfo88vferm0qbv88i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.balistream.leaderboard",
+            "certificate_hash": "889625ca7db69d9b403607ff99452b0fe08dbf57"
+          }
+        },
+        {
+          "client_id": "363024538010-q7t3q8h8s8c1ccc73iqgnjmjcc93689b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHYf0BQHMrSLkkkv0oBSYvNMuSDDao25I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363024538010-q7t3q8h8s8c1ccc73iqgnjmjcc93689b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
