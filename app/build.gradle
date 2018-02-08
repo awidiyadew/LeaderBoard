@@ -29,4 +29,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.google.firebase:firebase-firestore:11.8.0'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
 }
