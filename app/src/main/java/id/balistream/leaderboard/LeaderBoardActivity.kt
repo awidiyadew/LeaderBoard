@@ -3,6 +3,7 @@ package id.balistream.leaderboard
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 
 class LeaderBoardActivity : AppCompatActivity() {
@@ -10,6 +11,7 @@ class LeaderBoardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learder_board)
+        FirebaseApp.initializeApp(this)
         val db = FirebaseFirestore.getInstance()
         db.collection("players")
                 .addSnapshotListener({ values, error ->
