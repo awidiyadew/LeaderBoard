@@ -5,8 +5,37 @@
     android:layout_height="match_parent"
     tools:context="id.balistream.leaderboard.LeaderBoardActivity">
 
+    <LinearLayout
+        android:id="@+id/layout_champion"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#cac3c3"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#ec8787"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#a1efc3"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
+        android:layout_below="@id/layout_champion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"/>
