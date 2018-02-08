@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_learder_board.*
 
 class LeaderBoardActivity : AppCompatActivity() {
@@ -27,6 +28,7 @@ class LeaderBoardActivity : AppCompatActivity() {
     private fun loadPlayers() {
         val db = FirebaseFirestore.getInstance()
         db.collection("players")
+                .orderBy("score", Query.Direction.DESCENDING)
                 .addSnapshotListener({ snapshots, error ->
                     if (error != null) {
                         Log.d("TAG", error.message)
