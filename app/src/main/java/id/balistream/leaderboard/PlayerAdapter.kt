@@ -4,9 +4,11 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.item_player.view.*
 
-class PlayerAdapter() : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
+class PlayerAdapter : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
 
     private var players: MutableList<Player> = mutableListOf()
 
@@ -34,6 +36,10 @@ class PlayerAdapter() : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
         fun bind(player: Player) {
             itemView.tv_name.text = player.name
             itemView.tv_score.text = player.score.toString()
+            itemView.tv_nationality.text = player.nationality
+            Glide.with(itemView.tv_name.context)
+                    .load(player.photo)
+                    .into(itemView.iv_photo)
         }
     }
 }
