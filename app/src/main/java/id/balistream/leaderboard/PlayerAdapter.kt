@@ -34,7 +34,8 @@ class PlayerAdapter : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
 
     inner class PlayerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(player: Player, position: Int) {
-            itemView.tv_name.text = "#${position + 1} | ${player.name}"
+            itemView.tv_position.text = (position + 1).toString()
+            itemView.tv_name.text = player.name
             itemView.tv_score.text = player.score.toString()
             itemView.tv_nationality.text = player.nationality
             Glide.with(itemView.tv_name.context)

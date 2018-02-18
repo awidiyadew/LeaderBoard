@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
-    android:background="#33000000"
+    android:background="#26ffffff"
     android:layout_marginBottom="8dp"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="#33ffffff">
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            tools:text="11"/>
+    </RelativeLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_photo"
@@ -28,12 +43,13 @@
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             tools:text="awidiyadew"
             android:textColor="@color/colorText"
             android:textStyle="bold"
             android:textAllCaps="true"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_nationality"
@@ -41,7 +57,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="10dp"
             android:textColor="@color/colorText"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:paddingEnd="10dp"
             tools:text="Indonesia"/>
 
@@ -57,16 +73,17 @@
             android:id="@+id/tv_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="@color/colorBtpn"
             tools:text="54" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="WPM"
-            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textColor="@color/colorBtpn"
             android:textStyle="bold" />
     </LinearLayout>
 
