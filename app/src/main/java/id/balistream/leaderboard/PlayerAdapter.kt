@@ -21,7 +21,7 @@ class PlayerAdapter : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: PlayerViewHolder, position: Int) {
-        holder.bind(players[position])
+        holder.bind(players[position], position)
     }
 
     fun addPlayers(players: List<Player>) {
@@ -33,8 +33,8 @@ class PlayerAdapter : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
     }
 
     inner class PlayerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(player: Player) {
-            itemView.tv_name.text = player.name
+        fun bind(player: Player, position: Int) {
+            itemView.tv_name.text = "#${position + 1} | ${player.name}"
             itemView.tv_score.text = player.score.toString()
             itemView.tv_nationality.text = player.nationality
             Glide.with(itemView.tv_name.context)
