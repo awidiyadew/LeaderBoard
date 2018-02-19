@@ -38,9 +38,7 @@ class PlayerAdapter : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
             itemView.tv_name.text = player.name
             itemView.tv_score.text = player.score.toString()
             itemView.tv_nationality.text = player.nationality
-            Glide.with(itemView.tv_name.context)
-                    .load(player.photo)
-                    .into(itemView.iv_photo)
+            itemView.iv_photo.loadImg(player.photo)
         }
     }
 }

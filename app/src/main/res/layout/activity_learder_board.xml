@@ -9,29 +9,83 @@
     <LinearLayout
         android:id="@+id/layout_champion"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimary"
+        android:minHeight="150dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="16dp">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#cac3c3"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_champion2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBtpn"
+                android:layout_below="@id/iv_champion2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="2ND"/>
+        </RelativeLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#ec8787"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_champion1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBtpn"
+                android:layout_below="@id/iv_champion1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="1ST"/>
+        </RelativeLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#a1efc3"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_champion3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBtpn"
+                android:layout_below="@id/iv_champion3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="3RD"/>
+        </RelativeLayout>
 
     </LinearLayout>
 
