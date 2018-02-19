@@ -4,17 +4,17 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
-import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_learder_board.*
-import kotlinx.android.synthetic.main.item_player.view.*
+import kotlinx.android.synthetic.main.content_scrolling.*
 
 class LeaderBoardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learder_board)
+        setSupportActionBar(toolbar)
         setupRecyclerView()
         loadPlayers()
     }
