@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient"
         tools:context="id.balistream.leaderboard.LeaderBoardActivity">
 
         <LinearLayout
@@ -101,6 +101,7 @@
             android:layout_below="@id/layout_champion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
             android:scrollbars="none"/>
 
     </RelativeLayout>
